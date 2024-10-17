@@ -1,0 +1,69 @@
+<html></html>
+
+<head>
+    <script>
+        /* Coding Task 1
+        On a single line, declare three variables with the given names and values: firstName = "Moe" lastName = "Adam" age = 52 */
+        
+        var person = { firstName: "Moe", lastName: "Adam", age: "52" };
+
+        /* Coding Task 2
+        Do the following:
+        Declare a variable, name it firstname, and assign it the value “Mike”
+        Declare a variable, name it lastname, and assign it the value “Douglas”
+        Declare a variable, name it fullname, and assign it the vaue of firstname + lastname
+        Make sure fullname contains a space between the firstname and the lastname
+        Display the results in an alert*/
+
+        var firstName = "Mike";
+        var lastName = "Douglas";
+        var fullName = firstName + " " + lastName;
+
+        alert(fullName);
+
+        /*Coding Task 3
+
+        Create a function called addMe that accepts 1 argument x:
+        This function will add the number to an external variable
+        Name the external variable total and assign it a value of 0 (zero)
+        Call the function three times with three distinct values
+        Display the results however you wish */
+
+        var total = 0;
+        function addMe(x) {
+            total = total + x;
+        }
+
+        addMe(100);
+        addMe(200);
+        addMe(300);
+        
+        console.log(total);
+        
+
+        /*Coding Task 4
+        You know how old your cat is in human years, but how old is your cat in cat years? You can create a calculation to figure that out!
+        Create a function called calculateCatAge that takes one argument: the age of your cat
+        Estimate your cat's age using a conversion rate of one human year to seven cat years
+        The outcome should be displayed on the screen as follows: "Your cat is ## years old in cat years!"
+        Call the function three times with three distinct values */
+        
+        var humanYear = 7;
+
+        function calculateCatAge(catAge) {
+            var catAge = humanYear * catAge;
+            document.write("Your cat is " + catAge + " years old in cat years!<br>");
+
+        }
+
+        calculateCatAge(2);
+        calculateCatAge(7);
+        calculateCatAge(9);
+
+
+    </script>
+</head>
+
+<body></body>
+
+</html>
